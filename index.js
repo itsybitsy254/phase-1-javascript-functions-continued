@@ -1,12 +1,14 @@
 function saturdayFun(activity = "roller-skate") {
   return `This Saturday, I want to ${activity}!`;
 }
-saturdayFun();
+const saturdayActivity = saturdayFun();
+console.log(saturdayActivity);
 
 function mondayWork(activity = "go to the office") {
   return `This Monday, I will ${activity}.`;
 }
-mondayWork();
+const mondayActivity = mondayWork("work from home");
+console.log(mondayActivity); 
 
 function wrapAdjective(param1 = "*") {
   return function (param2 = "special") {
